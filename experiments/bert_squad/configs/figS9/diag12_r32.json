@@ -1,0 +1,68 @@
+{
+  "WEIGHT_NAME": "weight_diag12_r32.pth",
+  "SEED": 42,
+  "N_EPOCHS": 5,
+  "BATCH_SIZE": 48,
+  "LEARNING_RATE": 0.0011082903245468508,
+  "WARMUP_STEPS": 365,
+  "OPTIMIZER": "AnalogAdam",
+  "LRTT_RANK": 32,
+  "TRANSFER_EVERY": 8,
+  "TRANSFER_LR": 0.0007873259241041807,
+  "FAST_LR": 0.6757723272066278,
+  "REINIT_MODE": "decay",
+  "TRANSFER_METHOD": "onehot",
+  "AB_DW_MIN": 0.0001231800451741122,
+  "AB_MULTILEVEL": 10,
+  "AB_RESET_STD": 1e-30,
+  "AB_DEVICE": "constantstepideal",
+  "C_DEVICE": "constantstepideal",
+  "IS_PERFECT": false,
+  "DAC_BITS": 8,
+  "ADC_BITS": 8,
+  "OUT_NOISE": 0.04,
+  "NO_SCALE_TRANSFER_LR": true,
+  "LORA_TARGET": "qkvo",
+  "ENCODER_ANALOG": true,
+  "ENABLE_DIAGNOSTIC": true,
+  "DIAG_STAMP": "diag12b_te8_r32_onehot",
+  "DIAG_TILES": {
+    "0": [
+      "self.query.analog_module.array.0.0",
+      "self.key.analog_module.array.0.0",
+      "self.value.analog_module.array.0.0",
+      "output.dense.analog_module.array.0.0"
+    ],
+    "6": [
+      "self.query.analog_module.array.0.0",
+      "self.key.analog_module.array.0.0",
+      "self.value.analog_module.array.0.0",
+      "output.dense.analog_module.array.0.0"
+    ],
+    "11": [
+      "self.query.analog_module.array.0.0",
+      "self.key.analog_module.array.0.0",
+      "self.value.analog_module.array.0.0",
+      "output.dense.analog_module.array.0.0"
+    ]
+  },
+  "DIAG_GROUPS": {
+    "g1_norms": true,
+    "g2_minmax": true,
+    "g3_mean": true,
+    "g3b_mean_abs": true,
+    "g3c_weight_hist": false,
+    "g4_deltas": true,
+    "g5a_erank_ab": false,
+    "g5b_erank_c": false,
+    "g6a_cells": true,
+    "g6b_cell_deltas": false,
+    "g7_cosines": true,
+    "g8_signal_abs": true,
+    "g10_signal_hist": false,
+    "g11a_xc_dc_abs": true,
+    "g11c_xc_dc_hist": false,
+    "g11d_xfer_meta": true
+  },
+  "GRAD_ACCUM_STEPS": 1
+}

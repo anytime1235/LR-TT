@@ -1,0 +1,23 @@
+# Python packages used for the experiments in the paper, with the versions of
+# the environment the reported numbers were produced in (Python 3.12, CUDA 12.8).
+# torch is not pinned here: the runs used PyTorch 2.7 with CUDA 12.8, and
+# torch>=2.3 with a matching CUDA toolkit builds and runs the simulator as well.
+transformers==4.55.2
+datasets==3.6.0
+evaluate==0.4.3
+huggingface_hub==0.34.4
+tokenizers==0.21.4
+dill==0.3.8
+optuna==4.9.0
+optuna-integration==4.9.0
+botorch==0.18.1
+gpytorch==1.15.2
+numpy==1.26.4
+scipy==1.15.2
+scikit-learn==1.6.1
+pandas==2.2.3
+matplotlib==3.10.1
+openpyxl==3.1.5
+pillow==11.1.0
+tqdm
+wandb==0.26.1

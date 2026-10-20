@@ -1,0 +1,17 @@
+include LICENSE
+include NOTICE.md
+include CHANGES_FROM_AIHWKIT.md
+include CITATION.cff
+include README.md
+include src/aihwkit/VERSION.txt
+global-include CMakeLists.txt
+include cmake/*.cmake
+include cmake/Modules/*.cmake
+include src/aihwkit/simulator/rpu_base_src/*.cpp
+include src/aihwkit/simulator/rpu_base_src/*.h
+include src/rpucuda/*.h
+include src/rpucuda/*.cpp
+include src/rpucuda/cuda/*.h
+include src/rpucuda/cuda/*.cpp
+include src/rpucuda/cuda/*.cu
+include tests/*.py

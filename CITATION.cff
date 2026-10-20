@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the LR-TT paper and the aihwkit toolkit it builds on."
+title: "LR-TT: Low-Rank Tiki-Taka for analog in-memory transformer training"
+type: software
+license: MIT
+repository-code: "https://github.com/anytime1235/LR-TT"
+authors:
+  - family-names: Cho
+    given-names: Young Woon
+    affiliation: "Seoul National University"
+  - family-names: Park
+    given-names: Jaeweon
+    affiliation: "Seoul National University"
+  - family-names: Won
+    given-names: Jongun
+    affiliation: "Seoul National University; University of Notre Dame"
+  - family-names: Kim
+    given-names: Sangbum
+    affiliation: "Seoul National University"
+    email: sangbum.kim@snu.ac.kr
+preferred-citation:
+  type: article
+  title: "Low-Rank Tiki-Taka: Memory-efficient transformer on-chip training for analog in-memory computing"
+  authors:
+    - family-names: Cho
+      given-names: Young Woon
+    - family-names: Park
+      given-names: Jaeweon
+    - family-names: Won
+      given-names: Jongun
+    - family-names: Kim
+      given-names: Sangbum
+  year: 2026
+  notes: "Submitted manuscript."
+references:
+  - type: conference-paper
+    title: "A flexible and fast PyTorch toolkit for simulating training and inference on analog crossbar arrays"
+    authors:
+      - family-names: Rasch
+        given-names: Malte J.
+      - family-names: Moreda
+        given-names: Diego
+      - family-names: Gokmen
+        given-names: Tayfun
+      - family-names: Le Gallo
+        given-names: Manuel
+      - family-names: Carta
+        given-names: Fabio
+      - family-names: Goldberg
+        given-names: Cindy
+      - family-names: El Maghraoui
+        given-names: Kaoutar
+      - family-names: Sebastian
+        given-names: Abu
+      - family-names: Narayanan
+        given-names: Vijay
+    collection-title: "2021 IEEE 3rd International Conference on Artificial Intelligence Circuits and Systems (AICAS)"
+    year: 2021
+    doi: 10.1109/AICAS51828.2021.9458494
+  - type: software
+    title: "IBM Analog Hardware Acceleration Kit (aihwkit)"
+    authors:
+      - name: "IBM Research"
+    version: "1.0.0"
+    repository-code: "https://github.com/IBM/aihwkit"
+    doi: 10.5281/zenodo.15467066

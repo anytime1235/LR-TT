@@ -1,0 +1,29 @@
+# build artefacts
+_skbuild/
+.mypy_cache/
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+src/aihwkit/simulator/rpu_base*.so
+src/aihwkit/simulator/rpu_base*.pyi
+__pycache__/
+*.py[cod]
+
+# editors / OS
+.vscode/
+.idea/
+.DS_Store
+*.swp
+
+# run outputs
+wandb/
+*.pt
+*.pth
+*.ckpt
+outputs/
+experiments/**/results/
+experiments/system_model/output/
+/data/
+experiments/mnist/data/
+/tmp/
